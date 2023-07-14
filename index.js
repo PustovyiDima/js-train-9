@@ -302,7 +302,7 @@ function insertElementAt(arr, index, element) {
    // Використовуємо метод splice для вставки елемента на позицію index
    // Повертаємо масив з вставленим елементом
    if (Array.isArray(arr)) {
-      arr.splice(index, 1, element);
+      arr.splice(index, 0, element);
       return arr;
    } else return "Вхідний параметр має бути масивом";
 }
